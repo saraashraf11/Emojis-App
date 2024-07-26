@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".Emojis">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="550dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        app:srcCompat="@drawable/purple_emojis" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_withSunglasses"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/smiling_face_with_sunglasses_svgrepo_com" />
+                <ImageView
+                    android:id="@+id/img_withTear"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/smiling_face_with_tear_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_withSunglasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op1"
+                    android:padding="5dp"
+                    android:text="Smiling Face with Sunglasses" />
+
+                <Button
+                    android:id="@+id/btn_withTear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op2"
+                    android:padding="5dp"
+                    android:text="Smiling Face with Tear" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_withHeartEyes"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/smiling_face_with_heart_eyes_svgrepo_com" />
+                <ImageView
+                    android:id="@+id/img_withHearts"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/smiling_face_with_hearts_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_withHeartEyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op3"
+                    android:padding="5dp"
+                    android:text="@string/face_with_heart_eyes" />
+
+                <Button
+                    android:id="@+id/btn_withHearts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op4"
+                    android:padding="5dp"
+                    android:text="@string/face_with_hearts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_shushing"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/shushing_face_svgrepo_com" />
+
+                <ImageView
+                    android:id="@+id/img_sleeping"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/sleeping_face_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_shushing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op5"
+                    android:padding="5dp"
+                    android:text="@string/shushing_face" />
+
+                <Button
+                    android:id="@+id/btn_sleeping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op6"
+                    android:padding="5dp"
+                    android:text="@string/sleeping_face" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_pouting"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/pouting_face_svgrepo_com" />
+                <ImageView
+                    android:id="@+id/img_rolling"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/rolling_on_the_floor_laughing_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_pouting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op7"
+                    android:padding="5dp"
+                    android:text="@string/pouting_face" />
+
+                <Button
+                    android:id="@+id/btn_rolling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op8"
+                    android:padding="5dp"
+                    android:text="@string/rolling_face" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_hugging"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/hugging_face_svgrepo_com" />
+                <ImageView
+                    android:id="@+id/img_pleading"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/pleading_face_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_hugging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op9"
+                    android:padding="5dp"
+                    android:text="@string/hugging_face" />
+
+                <Button
+                    android:id="@+id/btn_pleading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op10"
+                    android:padding="5dp"
+                    android:text="@string/pleading_face" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_fearful"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fearful_face_svgrepo_com" />
+                <ImageView
+                    android:id="@+id/img_hot"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/hot_face_svgrepo_com" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_fearful"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op11"
+                    android:padding="5dp"
+                    android:text="@string/fearful_face" />
+
+                <Button
+                    android:id="@+id/btn_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op12"
+                    android:padding="5dp"
+                    android:text="@string/hot_face" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_cold"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cold_face_svgrepo_com" />
+
+                <ImageView
+                    android:id="@+id/img_cring"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/crying_face_svgrepo_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op13"
+                    android:padding="5dp"
+                    android:text="@string/cold_face" />
+
+                <Button
+                    android:id="@+id/btn_crying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op14"
+                    android:padding="5dp"
+                    android:text="@string/crying_face" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_screaming"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/face_screaming_in_fear_svgrepo_com" />
+
+                <ImageView
+                    android:id="@+id/img_withSymblos"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/face_with_symbols_on_mouth_svgrepo_com" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_screaming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op15"
+                    android:padding="5dp"
+                    android:text="@string/screaming_face" />
+
+                <Button
+                    android:id="@+id/btn_withSymblos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="op16"
+                    android:padding="5dp"
+                    android:text="@string/face_with_symbols" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
