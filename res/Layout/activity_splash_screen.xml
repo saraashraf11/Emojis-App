@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/pink"
     android:orientation="vertical"
-    tools:context=".Welcome">
+    tools:context=".MainSplashScreen">
 
     <TextView
         android:id="@+id/w_w_i"
@@ -31,6 +31,5 @@
         android:src="@drawable/welcome"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
-
 
 </LinearLayout>

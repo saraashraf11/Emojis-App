@@ -7,31 +7,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/purble"
-    tools:context=".fearfulFace">
+    tools:context=".MainDescription">
 
     <ImageView
-        android:id="@+id/img_back_fearful"
+        android:id="@+id/img_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
+        android:onClick="operation"
         app:srcCompat="@drawable/back_svgrepo_com" />
 
     <ImageView
-        android:id="@+id/img_fearful2"
+        android:id="@+id/img_emoji"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/purble"
-        app:srcCompat="@drawable/fearful_face" />
+        android:layout_height="206dp"
+        android:background="@color/purble" />
 
     <TextView
-        android:id="@+id/title_fearful"
+        android:id="@+id/title_emoji"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="15dp"
-        android:text="@string/artical_title_fearful"
+        android:padding="10dp"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,15 +42,13 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/text_fearful"
+                android:id="@+id/text_emoji"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="@string/text_about_fearful"
-                android:textColor="@color/yellow"
+                android:textColor="#6DBFFD"
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>
